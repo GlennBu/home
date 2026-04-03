@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Glenn Buttigieg</title>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -57,47 +57,20 @@
       animation: rise 1s cubic-bezier(0.16,1,0.3,1) both;
     }
 
+
     @keyframes rise {
       from { opacity: 0; transform: translateY(32px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-family: 'DM Mono', monospace;
-      font-size: 11px;
-      letter-spacing: 0.12em;
-      color: var(--text-muted);
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      padding: 5px 14px;
-      margin-bottom: 2rem;
-      animation: rise 1s 0.1s cubic-bezier(0.16,1,0.3,1) both;
-    }
-    .badge-dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: #4ade80;
-      box-shadow: 0 0 6px #4ade80;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0%,100% { opacity: 1; }
-      50%      { opacity: 0.4; }
-    }
-
     h1 {
-      font-size: clamp(3rem, 10vw, 5.5rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
+      font-family: 'Roboto', sans-serif;
+      font-size: clamp(2.8rem, 9vw, 5.2rem);
+      font-weight: 100;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
       line-height: 1;
-      background: linear-gradient(135deg, #f0f4ff 0%, rgba(240,244,255,0.6) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: #f0f4ff;
       margin-bottom: 0.6rem;
       animation: rise 1s 0.15s cubic-bezier(0.16,1,0.3,1) both;
     }
@@ -186,6 +159,8 @@
 <body>
   <canvas id="bg"></canvas>
   <div class="grain"></div>
+
+  <div class="container">
 
     <h1>Glenn Buttigieg</h1>
 
